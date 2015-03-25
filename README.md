@@ -45,8 +45,9 @@ a single python source file at a time. On a fast machine you can change this if 
 
 2. Edit trace.py and update `TRACE_BASE = "/home/chris/ab/gamemenu.py"` with the path to the python script file you wish to profile. In this example `gamemenu.py`.
 
-3. Change the `import` statement to import everything from the file containing main():  
+3. Change the `import` statement to import everything from the file containing the `main()` that you want to translate:  
 `from gameengine import *`
+It’s not sufficient to just add the imports from your file containing your `main()`.
 
 4. Run your application using `python trace.py`. Parameters are passed through to your main().
 
